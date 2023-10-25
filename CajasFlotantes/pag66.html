@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+    <style>
+
+        body {
+            border: 1px solid black;
+            margin: 10px;
+            padding: 0;
+            display: block;
+        }
+        header{
+            border: 1px solid #000;
+            padding: 10px;
+            margin: 10px;
+            display: block;
+            background-color: aqua;
+            height: 50px;
+        }
+        .main{
+          display: flex;
+        }
+        section{
+          background-color: beige;
+          border: 1px solid #000;
+
+        }
+
+        aside{
+          background-color:blue;
+          width: 70%;
+          height: 400px;
+          float: right;
+
+        }
+        section{
+          width: 20%;
+          height: 200px;
+
+        }
+
+        section, aside {
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid #000;
+
+        }
+        footer{
+            padding: 10px;
+            margin: 10px;
+            background-color: yellowgreen;
+            border: 1px solid #000;
+            clear: both;
+
+        }
+
+        header, section, aside, footer{
+          text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+  <header>
+    <p>Cabecera</p>
+  </header>
+
+  <div class="main">
+    <section>
+        <p>Menu</p>
+    </section>
+
+    <aside>
+        <p>Contenido</p>
+    </aside>
+  </div>
+    <footer>
+      <p>Pie de pagina</p>
+    </footer>
+
+</body>
+</html>

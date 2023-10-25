@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-container {
+  display: grid;
+  gap: 3px;
+  padding: 3px;
+  grid-template-columns: auto auto auto auto;
+  height: 550px;
+  border: solid 2px black;
+}
+
+.grid-item {
+  text-align: center;
+  padding: 10px;
+  font-size: 30px;
+  border: solid 2px black;
+}
+
+.item1 {
+  grid-column: 1 / span 4;
+  grid-row: 1;
+  background-color: orange;
+}
+
+.item2 {
+  grid-column: 1 / span 1;
+  grid-row: 2;
+}
+
+.item3 {
+  grid-column: 2 / span 3;
+  grid-row: 2;
+}
+
+.item4 {
+  grid-column: 1 / span 2;
+  grid-row: 3;
+}
+
+.item2, .item4, .item7 {
+  background-color: rgb(255, 255, 157);
+}
+
+.item3, .item6 {
+  background-color: blue;
+}
+
+.item5, .item8, .item9, .item10 {
+  background-color: red;
+}
+/***************************************************************************/
+/* Segunda sección */
+.grid-container_1 {
+  display: grid;
+  gap: 3px;
+  padding: 3px;
+  grid-template-columns: auto auto auto auto;
+  height: 550px;
+  border: solid 2px black;
+}
+
+.grid-item_1 {
+  text-align: center;
+  padding: 10px;
+  font-size: 30px;
+  border: solid 2px black;
+}
+
+.item1_1 {
+  grid-column: 1 / span 4;
+  grid-row: 1;
+  background-color: orange;
+}
+
+.item2_1 {
+  grid-column: 1 / span 1;
+  grid-row: 2;
+}
+
+.item3_1 {
+  grid-column: 2 / span 3;
+  grid-row: 2;
+}
+
+.item4_1 {
+  grid-column: 1 / span 2;
+  grid-row: 3;
+}
+
+.item5_1{
+  grid-column: 3 / span 1;
+  grid-row: 3;
+}
+
+.item6_1{
+  grid-column: 4 / span 1;
+  grid-row: 3;
+}
+
+.item7_1{
+  grid-column: 1 / span 1;
+  grid-row: 4;
+}
+
+.item8_1{
+  grid-column: 2 / span 3;
+  grid-row: 4;
+}
+
+
+.item2_1, .item4_1, .item7_1 {
+  background-color: rgb(255, 255, 157);
+}
+
+.item3_1, .item6_1 {
+  background-color: blue;
+}
+
+.item5_1, .item8_1, .item9_1, .item10_1 {
+  background-color: red;
+}
+
+/**********************************************************************/
+/*Tercera seleccion*/
+.grid-container_2{
+  grid-template-columns: auto auto auto auto auto auto;
+  display: grid;
+  background-color: bisque;
+  width: 850px;
+  height: 300px;
+  border: solid 2px black;
+}
+.grid-item_2{
+
+}
+.horas {
+  grid-column: 0;
+  grid-row: 0;
+}
+
+.lunes {
+  grid-column: 0;
+  grid-row: 0;
+}
+
+.martes {
+  grid-column: 0;
+  grid-row: 0;
+}
+
+.miercoles {
+  grid-column: 0;
+  grid-row: 0;
+}
+
+.jueves {
+  grid-column: 0;
+  grid-row: 0;
+}
+
+.viernes {
+  grid-column: 0;
+  grid-row: 0;
+}
+</style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="grid-item item1"></div>
+    <div class="grid-item item2"></div>
+    <div class="grid-item item3"></div>
+    <div class="grid-item item4"></div>
+    <div class="grid-item item5"></div>
+    <div class="grid-item item6"></div>
+    <div class="grid-item item7"></div>
+    <div class="grid-item item8"></div>
+    <div class="grid-item item9"></div>
+    <div class="grid-item item10"></div>
+  </div>
+  <br>
+  <div class="grid-container_1">
+    <div class="grid-item_1 item1_1"></div>
+    <div class="grid-item_1 item2_1"></div>
+    <div class="grid-item_1 item3_1"></div>
+    <div class="grid-item_1 item4_1"></div>
+    <div class="grid-item_1 item5_1"></div>
+    <div class="grid-item_1 item6_1"></div>
+    <div class="grid-item_1 item7_1"></div>
+    <div class="grid-item_1 item8_1"></div>
+  </div>
+  <br>
+  <div class="grid-container_2">
+    <div class="horas">Horas</div>
+    <div class="lunes">Lunes</div>
+    <div class="martes">Martes</div>
+    <div class="miercoles">Miércoles</div>
+    <div class="jueves">Jueves</div>
+    <div class="viernes">Viernes</div>
+    <div class="numero">1</div>
+    <div class="numero">2</div>
+    <div class="numero">3</div>
+    <div class="recreo">Recreo</div>
+    <div class="numero">4</div>
+    <div class="numero">5</div>
+    <div class="numero">6</div>
+    <div class="dwes">DWES</div>
+    <div class="dwec">DWEC</div>
+    <div class="eie">EIE</div>
+    <div class="daw">DAW</div>
+    <div class="ingdiw">ING</div>
+  </div>
+  </body>
+</html>
