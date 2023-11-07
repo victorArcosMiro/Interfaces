@@ -1,0 +1,33 @@
+
+p:nth-child(2) {
+    font-weight: bold;
+}
+p .resaltar{
+    background-color: yellow;
+    font-size: 110%;
+}
+li {
+
+    list-style: none;
+}
+
+a{
+    padding-left: 15px;
+}
+a[href^="http"]{
+    background: url('external-link.png') no-repeat  0;
+    background-size: 16px 16px ;
+    
+}
+a[href$=".pdf"]{
+    background: url('pdf-link.png') no-repeat 0;
+    background-size: 16px 16px;
+}
+a[href$=".zip"]{
+    background: url('zip-link.png') no-repeat  0;
+    background-size: 16px 16px;
+}
+a[href^="#"]{
+    background: url('internal-link.png') no-repeat  0;
+    background-size: 16px 16px;
+}

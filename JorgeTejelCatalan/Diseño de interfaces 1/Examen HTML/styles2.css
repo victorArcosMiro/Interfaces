@@ -1,0 +1,23 @@
+/*******ESTILOS GENERALES********/
+body {
+    background: linear-gradient(100deg, rgb(65, 182, 250) 10%, black 90%, rgb(80, 191, 255) 10%, black 90%);
+    background-attachment: fixed;
+    color: white;
+}
+
+#circulo:checked ~ #lista li {
+    list-style: circle;
+}
+
+#cuadrado:checked ~ #lista li {
+    list-style: square;
+}
+
+#triangulo:checked ~ #lista li {
+    list-style: none;
+}
+
+
+
+
+

@@ -1,0 +1,45 @@
+#azul{
+    background: blue;
+    border-radius: 5px;
+    width: 20rem;
+    height: 20rem;
+    margin: auto;
+    border: 1px solid black;
+    color: white;
+}
+
+#verde{
+    position: relative;
+    width: 12rem;
+    height: 12rem;
+    margin: auto;
+    background: green;
+    border-radius: 50rem;
+    border: 1px solid black;
+    top: 19%;
+    text-align: center;
+}
+
+#amarillo{
+    width: 8rem;
+    height: 8rem;
+    margin: auto;
+    background: orange;
+    border: 1px solid black;
+    border-radius: 50rem;
+    position: relative;
+    top: 7%;
+    text-align: center;
+}
+
+#rojo{
+    width: 4rem;
+    height: 4rem;
+    margin: auto;
+    background: red;
+    border: 1px solid black;
+    border-radius: 50rem;
+    position: relative;
+    top: 10%;
+    text-align: center;
+}

@@ -1,0 +1,33 @@
+#vocabulario {
+    border: 1px solid black;
+    border-color: blue;
+    width: 237px;
+    height: 165px;
+    display: flex;
+    flex-direction: row;
+}
+h1{
+    color: blue;
+}
+/*Dar tamaño bordes redondeados al div que contiene la lista
+desordenada. Ademas le doy display flex y posicionamiento
+en fila para que salgan uno detras de otro en la misma altura*/
+
+#vocabulario ul, #vocabulario div{
+    margin: 5px;
+    margin-left: 5px;
+}
+
+#car:hover::after{
+    content: "coche";
+    margin-left: 50px;
+
+}
+#window:hover::after{
+    content: "ventana";
+    margin-left: 50px;
+}
+#door:hover::after{
+    content: "puerta";
+    margin-left: 50px;
+}

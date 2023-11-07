@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Ejercicio Posicionamiento</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+
+        .cuadrado1{
+            width: 350px; 
+            height: 380px; 
+            border: 3px solid rgb(27, 191, 54);
+        }
+
+        .circuloN{
+            top: 7%;
+            left: 6%;
+            position: absolute;
+            background-color: orange;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+
+        .circuloA{
+            top: 20%;
+            left: 10%;
+            position: absolute;
+            background-color: blue;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+
+        .circuloV{
+            top: 20%;
+            left: 2%;
+            position: absolute;
+            background-color: green;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+        
+        .circuloB1 {
+            top: 39%;
+            left: 34%;
+            width: 45px;
+            height: 45px;
+            position: absolute;
+            border-radius: 50%;
+            background-color: white;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .circuloB2 {
+            top: 36%;
+            left: 35%;
+            width: 45px;
+            height: 45px;
+            position: absolute;
+            border-radius: 50%;
+            background-color: white;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .circuloB3 {
+            top: 36%;
+            left: 34%;
+            width: 45px;
+            height: 45px;
+            position: absolute;
+            border-radius: 50%;
+            background-color: white;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .circuloA:hover, .circuloN:hover, .circuloV:hover {
+            background-color: black;
+        }
+
+        .circuloB1:before  {
+            content: "1";
+        }
+
+        .circuloB2:before{
+            content: "3";
+        }
+
+        .circuloB3:before {
+            content: "2";
+        }
+
+        .circuloN:hover .circuloB1::before, .circuloA:hover .circuloB2::before, .circuloV:hover .circuloB3::before {
+            content: "8";
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cuadrado1">
+        <div class="circuloN">
+            <div class="circuloB1"><p></p></div>
+        </div>
+        <div class="circuloA">
+            <div class="circuloB2"><p></p></div>
+        </div>
+        <div class="circuloV">
+            <div class="circuloB3"><p></p></div>
+        </div>
+    </div>
+
+</body>
+</html>

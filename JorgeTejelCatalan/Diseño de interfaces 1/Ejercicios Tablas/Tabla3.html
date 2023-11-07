@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        table{
+            
+            border-collapse: collapse;
+        }
+        td, th{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        #DWES{
+            background-color: purple;
+        }
+        #DWEC {
+            background-color: green;
+        }
+        #EIE{
+            background-color: burlywood;
+        }
+        #DAW{
+            background-color: blue;
+        }
+        #ING{
+            background-color: orange;
+        }
+        #DIW{
+            background-color: gold;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Horas</th>
+            <th>Lunes</th>
+            <th>Martes</th>
+            <th>Miercoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td rowspan="3" id="DWES">DWES</td>
+            <td rowspan="3" id="DWES">DWES</td>
+            <td rowspan="3"id="DWES">DWES</td>
+            <td rowspan="2" id="DWEC">DWEC</td>
+            <td rowspan="2" id="EIE">EIE</td>
+        </tr>
+        <tr>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td id="DAW">DAW</td>
+            <td id="ING">ING</td>
+        </tr>
+        <tr>
+            <td>-</td>
+            <td colspan="5" align="center">RECREO</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td id="EIE">EIE</td>
+            <td rowspan="3" id="DIW">DIW</td>
+            <td id="DIW">DIW</td>
+            <td id="DAW">DAW</td>
+            <td id="ING">ING</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td rowspan="2" id="DAW">DAW</td>
+            <td rowspan="2" id="DWEC">DWEC</td>
+            <td rowspan="2" id="DIW">DIW</td>
+            <td rowspan="2" id="DWEC">DWEC</td>
+        </tr>
+        <tr>
+            <td>6</td>
+        </tr>
+    </table>
+</body>
+</html>

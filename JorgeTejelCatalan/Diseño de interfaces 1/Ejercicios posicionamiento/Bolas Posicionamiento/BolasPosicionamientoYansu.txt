@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        .cuadrado {
+            position: relative;
+            width: 293px; 
+            height: 280px; 
+            border: 3px solid #555;
+            border-color: #5cb85c;
+            }
+        .circuloG {
+            position: absolute;
+            top: 126px;
+            left: 16px;
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            border-radius: 50%;
+            border-radius: 50%;
+            background: #5cb85c;
+            }
+        .circuloB {
+            top: 126px;
+            left: 146px;
+            position: absolute;
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            border-radius: 50%;
+            border-radius: 50%;
+            background: blue;
+            }
+        .circuloY {
+            top: 14px;
+            left: 80px;
+            position: absolute;
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            border-radius: 50%;
+            border-radius: 50%;
+            background: orange;
+            }
+       
+        .circulo1 {
+            top: 41px;
+            left: 42px;
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border-radius: 50%;
+            border-radius: 50%;
+            background: white;
+            }
+        .circulo1 p{
+            font-weight: bold;
+            text-align: center;
+            font-size: 100%;
+            }
+
+        .circulo2 {
+            top: 41px;
+            left: 41px;
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border-radius: 50%;
+            border-radius: 50%;
+            background: white;
+            }
+        .circulo2 p{
+            font-weight: bold;
+            text-align: center;
+            font-size: 100%;
+            }
+        .circulo3 {
+            top: 41px;
+            left: 41px;
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border-radius: 50%;
+            border-radius: 50%;
+            background: white;
+            }
+        .circulo3 p{
+            font-weight: bold;
+            text-align: center;
+            font-size: 100%;
+            }
+        
+        .circuloY:hover, .circuloB:hover, .circuloG:hover{
+            background-color: black;
+        }
+        .num1:before{
+            content:"1";
+        }
+        .num2:before{
+            content:"2";
+        }
+        .num3:before{
+            content:"3";
+        }
+        .circuloY:hover .num1::before, .circuloB:hover .num3::before, .circuloG:hover .num2::before {
+            content: "8";
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="cuadrado">
+        <div class="circuloG"> <div class="circulo2"><p class="num2"></p></div></div>
+        <div class="circuloB"> <div class="circulo3"><p class="num3"></p></div></div>
+        <div class="circuloY"><div class="circulo1"><p class="num1"></p></div></div>
+        
+       
+       
+    </div>
+</body>
+</html>
