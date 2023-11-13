@@ -154,7 +154,7 @@ main .post{
 }
 
 main .post:hover{
-    border:solid 2px red
+    border:solid 1px red
 }
 
 main .post_distributor{
