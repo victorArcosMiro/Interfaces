@@ -121,6 +121,7 @@ section main .post{
     background-color:#eeeeee;
     width: 600px;
     border: solid 1px black;
+    border-radius: 8px;
     margin-top: 100px;
 }
 
@@ -143,10 +144,15 @@ section main .post{
     border: solid 1px black;
 }
 
-.post .txt{
+.post .txt1{
     float: left;
     margin-top: 5px;
     text-align: left;
+}
+
+
+input[name="opcion2"]:checked ~ .txt1::before {
+    content: "In a bowl, prepare the cream for tiramisu: mix the mascarpone cheese with the egg yolks and sugar. Separately, beat the egg whites until stiff peaks form. Finally, fold the beaten egg whites into the bowl with the mascarpone. Carefully fold with a whisk, making enveloping movements, to not lose the air from the whipped whites (similar to making a mousse). In a deep tray, assemble the dessert by placing layers of hard biscuits (ladyfingers) and soaking them with coffee. On a layer of biscuits soaked in coffee, add a layer of mascarpone cream, then another layer of biscuits, another layer of cream... and so on. Build as many layers as you desire, finishing with a layer of cream. Sift a bit of dark chocolate powder over the final layer. Tiramisu is a dessert that should be refrigerated for a few hours."; /* Traducción al inglés */
 }
 
 main .post{
