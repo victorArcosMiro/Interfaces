@@ -170,3 +170,39 @@ main .post_distributor{
     justify-content: center;
     align-items: center;
 }
+
+
+.post .txt_tarta_de_manzana_ingles {
+    display: none;
+}
+
+/* Mostramos los textos en inglés cuando el checkbox está marcado */
+.checkbox input:checked ~ .post .txt_tarta_de_manzana_ingles {
+    display: block;
+}
+
+/* Ocultamos los textos en español cuando el checkbox está marcado */
+.checkbox input:checked ~ .post .txt_tarta_de_manzana {
+    display: none;
+}
+
+.txt-esp{
+    visibility: visible;
+}
+
+.txt_ing{
+    visibility: hidden;
+    display: none;
+}
+
+input#opcion1:checked ~*.Texto-ingles {
+    visibility: visible;
+    display: inherit;
+}
+
+input#opcion1:checked ~*.Texto-español {
+    display: none;
+}
+
+
+
