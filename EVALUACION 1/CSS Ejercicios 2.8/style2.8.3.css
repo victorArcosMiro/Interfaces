@@ -1,6 +1,0 @@
-body > p:nth-of-type(2) {
-    font-weight: bold;
-}
-a[href$=".pdf"]::before {
-
-}
