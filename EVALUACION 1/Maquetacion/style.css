@@ -1,0 +1,97 @@
+/*Video: https://www.youtube.com/watch?v=m9nlCdf-k7U&t=8s */
+/*Minuto: 14:39, empezamos con el apartado del banner*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+    /*Como no queremos que al ponerle un 80% de ancho a los elemntos dentro del body quede el espacio restante a la derecha debemos centrar los elementos que 
+    estan dentro del body con estos atributos: */
+    display: flex;
+    flex-direction: column; /*para que su orientacion principal sea el eje vertical (COLUMN)*/
+    justify-content: flex-start; /*alineacion en eje vertical*/ /*flex-start -> para que se pegue arriba*/
+    align-items: center;
+    ;
+}
+/*Inicio header*/
+.header{
+    width: 80%; /*No queremos que ocupe el 100% del body por lo que lo ponemos al 80%*/
+    height: 4em;
+    background-color:bisque;
+    /*Para centrar la imagen del logo de la empresa*/
+    display: flex;
+    flex-direction: row; /*para que su orientacion principal sea el eje horizontal (ROW)*/
+    justify-content: center; /*Alineamos al centro segun el eje horizontal*/
+    /*Con estos dos atributos -> flex-direction: row y justify-content: center; hemos centrado HORIZONTALMENTE pero falta centrarlo en el eje VERTICAL*/
+    align-items: center;
+}
+/*si tuvieramos una imagen deberiamos agregar: */
+.logo{
+    /*Esto hace que la imagen cubra como MAXIMO el 100% del alto de su padre (el header)*/
+    object-fit: cover; 
+    height: 100%;
+}
+
+
+/*Inicio nav*/
+.nav{
+    width: 80%; /*No queremos que ocupe el 100% del body por lo que lo ponemos al 80%*/
+    height:3em;
+    background-color:rgb(119, 121, 26);
+}
+.barnav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /*Para que se situen uno despues del otro de forma horizontal, osea en fila (ROW)*/
+    flex-direction: row;
+    /*Pero los elementos deben bien alineados VERTICAL y HORIZAONTALMENTE en su padre.nav*/
+    justify-content: center;/*HORIZONTALMENTE*/
+    align-items: center;/*VERTICALMENTE*/
+}
+.menu{
+    width: 20%; /*5 elementos de 20% cada uno completaria el 100% del ancho de .barnav*/
+    height: 100%;
+    background-color: black;
+    color: white;
+    /*Quitamos decoracion de los elementos de la lista*/
+    text-decoration: none;
+    /*Y debemos centrar el texto de cada elemento li.maenu */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.menu:hover{
+    background-color: whitesmoke;
+    color: black;
+}
+
+/*Inicio banner*/
+.banner{
+    width: 80%; /*No queremos que ocupe el 100% del body por lo que lo ponemos al 80%*/
+    height: calc(100vh - 7em); /*que calcule el 100% del restante de - 4em(del header) + 3em(del nav)*/
+    background-color:rgb(255, 196, 242);
+}
+
+
+/*Inicio article*/
+.article{
+    width: 80%; /*No queremos que ocupe el 100% del body por lo que lo ponemos al 80%*/
+    height: 100vh;
+    background-color:rgb(18, 3, 85);
+}
+
+
+/*Inicio footer*/
+.footer{
+    width: 80%; /*No queremos que ocupe el 100% del body por lo que lo ponemos al 80%*/
+    height: 4em;
+    background-color:rgb(98, 139, 43);
+}
