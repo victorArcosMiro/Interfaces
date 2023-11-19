@@ -1,30 +1,36 @@
 html {
+    /*Le añado la propiedad para que al hacer el srcoll sea mas gradual y suave*/
     scroll-behavior: smooth;
 }
 
-body{
+body {
+    /* Establezco que el cuerpo tenga un ancho máximo de 990px, se muestre como bloque, y se centre horizontalmente */
     width: 990px;
     display: block;
     margin: auto;
     box-sizing: border-box;
 }
 
-header{
+header {
+    /* Hago que el encabezado ocupe el 100% del ancho disponible y elimino cualquier margen predeterminado */
     width: 100%;
     margin: 0;
 }
 
-header .header-img{
+header .header-img {
+    /* Establezco que los elementos con la clase 'header-img' dentro del encabezado se muestren como un bloque en línea */
     margin: 0;
     padding: 0;
     display: inline-block;
 }
 
-header .header-img img{
+header .header-img img {
+    /* Fijo el ancho de las imágenes dentro de 'header-img' para evitar que se extiendan más allá de cierto límite */
     width: 990px;
 }
 
-header .header-titulo{
+header .header-titulo {
+    /* Defino el fondo, color de texto y ancho de los elementos con la clase 'header-titulo' dentro del encabezado */
     background-color: rgb(54, 29, 2);
     color: white;
     width: 990px;
@@ -33,34 +39,41 @@ header .header-titulo{
     justify-content: center;
 }
 
-header .header-titulo .header-titulo-img{
+header .header-titulo .header-titulo-img {
+    /* Establezco el ancho de los elementos con la clase 'header-titulo-img' anidados dentro de 'header-titulo' */
     width: 350px;
 }
 
-header .header-titulo .header-titulo-h1{
+header .header-titulo .header-titulo-h1 {
+    /* Defino el ancho de los elementos con la clase 'header-titulo-h1' anidados dentro de 'header-titulo' */
     width: 650px;
 }
 
-.header-titulo-h1 h1{
+.header-titulo-h1 h1 {
+    /* Floto el título principal a la izquierda y agrego un relleno a la izquierda para el espaciado */
     float: left;
     padding-left: 25px;
 }
 
-.header-titulo-img img{
+.header-titulo-img img {
+    /* Floto las imágenes a la izquierda y agrego un relleno a la izquierda para el espaciado */
     float: left;
     padding-left: 25px;
 }
 
 .nav {
+    /* Establezco que la navegación tenga una lista sin viñetas y elimino márgenes y rellenos predeterminados */
     list-style-type: none;
     margin: 0;
     padding: 0;
     background-color: black;
     height: 50px;
-    position: sticky;
+    position: sticky; /* Hago que la navegación se quede fija en la parte superior al hacer scroll */
 }
-.nav .recetas{
-    background-color:#3e8b42;
+
+.nav .recetas {
+    /* Defino el estilo de los elementos con la clase 'recetas' dentro de la navegación */
+    background-color: #3e8b42;
     height: 50px;
     width: 100px;
     text-align: center;
@@ -70,30 +83,37 @@ header .header-titulo .header-titulo-h1{
     color: white;
 }
 
-
 .nav a {
-    text-decoration: none; /* Quitar el subrayado de los enlaces */
-    color: white; /* Cambiar el color del texto de los enlaces */
+    /* Establezco el estilo de los enlaces dentro de la navegación */
+    text-decoration: none;
+    color: white;
     display: block;
     padding: 10px;
 }
-.nav a.sub_receta{
+
+.nav a.sub_receta {
+    /* Cambio el color de los enlaces con la clase 'sub_receta' dentro de la navegación */
     color: black;
 }
 
 .nav li {
+    /* Hago que los elementos de lista se muestren en línea y tengan una posición relativa */
     display: inline-block;
     position: relative;
 }
 
-.nav .recetas li:hover{
+.nav .recetas li:hover {
+    /* Cambio el color de fondo cuando se pasa el ratón por encima de los elementos con la clase 'recetas' dentro de la lista */
     background-color: lightgray;
 }
-.nav .recetas li{
-        width: 100%;
+
+.nav .recetas li {
+    /* Establezco el ancho de los elementos con la clase 'recetas' dentro de la lista al 100% */
+    width: 100%;
 }
 
 .nav li ul {
+    /* Oculto los submenús por defecto y establezco su posición absoluta y otros estilos */
     display: none;
     position: absolute;
     top: 100%;
@@ -105,10 +125,32 @@ header .header-titulo .header-titulo-h1{
 }
 
 .nav li:hover ul {
+    /* Hago que los submenús se muestren cuando se pasa el ratón por encima de los elementos de la lista */
     display: block;
 }
 
-main{
+.navbar {
+    /* Establezco el estilo de la barra de navegación */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    position: sticky; /* Hago que la barra de navegación se quede fija en la parte superior al hacer scroll */
+    top: 0;
+}
+
+.nav {
+    /* Hago que la navegación se muestre como una fila flex para alinear los elementos horizontalmente */
+    display: flex;
+}
+
+.nav li {
+    /* Establezco un margen a la derecha entre los elementos de la lista en la navegación */
+    margin-right: 20px;
+}
+
+main {
+    /* Establezco que el contenedor principal tenga una disposición flexbox en columna y se alinee y justifique al centro */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -117,53 +159,57 @@ main{
     margin: 0;
 }
 
-section main .post{
-    background-color:#eeeeee;
+main .post {
+    /* Establezco el estilo para los elementos con la clase 'post' dentro del contenedor principal */
+    background-color: #eeeeee;
     width: 600px;
     border: solid 1px black;
     border-radius: 8px;
     margin-top: 100px;
+    padding: 10px;
 }
 
-.post .checkbox-title{
+main .post_distributor#dulce_de_leche {
+    /* Añado un margen inferior específico para los elementos con la clase 'post_distributor' y el ID 'dulce_de_leche' */
+    margin-bottom: 100px;
+}
+
+.post input, label {
+    /* Establezco el estilo para los elementos de entrada y las etiquetas dentro de los elementos con la clase 'post' */
+    float: left;
+    text-align: left;
+}
+
+.post .title {
+    /* Establezco el estilo para los elementos con la clase 'title' dentro de los elementos con la clase 'post' */
     width: 440px;
     float: left;
     text-align: left;
 }
-.post .title{
-    width: 440px;
-    float: left;
-    text-align: left;
 
-}
-
-.post .img img{
+.post .img img {
+    /* Establezco el estilo para las imágenes dentro de los elementos con la clase 'img' dentro de los elementos con la clase 'post' */
     width: 114px;
     height: 86px;
     float: right;
     border: solid 1px black;
 }
 
-.post .txt1{
+.post .txt_esp,
+.post .txt_ing {
+    /* Establezco el estilo para los elementos con las clases 'txt_esp' y 'txt_ing' dentro de los elementos con la clase 'post' */
     float: left;
     margin-top: 5px;
     text-align: left;
 }
 
-
-input[name="opcion2"]:checked ~ .txt1::before {
-    content: "In a bowl, prepare the cream for tiramisu: mix the mascarpone cheese with the egg yolks and sugar. Separately, beat the egg whites until stiff peaks form. Finally, fold the beaten egg whites into the bowl with the mascarpone. Carefully fold with a whisk, making enveloping movements, to not lose the air from the whipped whites (similar to making a mousse). In a deep tray, assemble the dessert by placing layers of hard biscuits (ladyfingers) and soaking them with coffee. On a layer of biscuits soaked in coffee, add a layer of mascarpone cream, then another layer of biscuits, another layer of cream... and so on. Build as many layers as you desire, finishing with a layer of cream. Sift a bit of dark chocolate powder over the final layer. Tiramisu is a dessert that should be refrigerated for a few hours."; /* Traducción al inglés */
+main .post:hover {
+    /* Cambio el estilo cuando se pasa el ratón por encima de los elementos con la clase 'post' dentro del contenedor principal */
+    border: solid 1px red;
 }
 
-main .post{
-    padding: 10px;
-}
-
-main .post:hover{
-    border:solid 1px red
-}
-
-main .post_distributor{
+main .post_distributor {
+    /* Establezco el estilo para los elementos con la clase 'post_distributor' dentro del contenedor principal */
     width: 100%;
     text-align: center;
     display: flex;
@@ -172,36 +218,52 @@ main .post_distributor{
 }
 
 
-.post .txt_tarta_de_manzana_ingles {
+.txt_esp {
+    /* Hago visible el texto en español */
+    visibility: visible;
+}
+
+.txt_ing {
+    /* Oculto el texto en inglés por defecto */
     display: none;
 }
 
-/* Mostramos los textos en inglés cuando el checkbox está marcado */
-.checkbox input:checked ~ .post .txt_tarta_de_manzana_ingles {
+input.opcion_traduccion:checked ~ .txt_ing {
+    /* Cuando la opción de traducción está marcada, hago visible el texto en inglés y oculto el texto en español */
     display: block;
 }
 
-/* Ocultamos los textos en español cuando el checkbox está marcado */
-.checkbox input:checked ~ .post .txt_tarta_de_manzana {
+input.opcion_traduccion:checked ~ .txt_esp {
+    /* Cuando la opción de traducción está marcada, oculto el texto en español */
     display: none;
 }
 
-.txt-esp{
-    visibility: visible;
+input.opcion_2columnas:checked ~ .txt_esp {
+    /* Cuando la opción de dos columnas está marcada, establezco la propiedad column-count en 2 para el texto en español */
+    column-count: 2;
 }
 
-.txt_ing{
-    visibility: hidden;
-    display: none;
+input.opcion_2columnas:checked ~ input.opcion_traduccion:checked ~ .txt_ing {
+    /* Cuando ambas opciones, de dos columnas y de traducción, están marcadas, establezco la propiedad column-count en 2 para el texto en inglés */
+    column-count: 2;
 }
 
-input#opcion1:checked ~*.Texto-ingles {
-    visibility: visible;
-    display: inherit;
+footer {
+    /* Establezco el color de fondo, el color del texto y utilizo flexbox para distribuir el espacio entre los elementos del pie de página */
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
 }
 
-input#opcion1:checked ~*.Texto-español {
-    display: none;
+.decha {
+    /* Establezco un margen a la derecha para el elemento con la clase "decha" */
+    margin-right: 15px;
+}
+
+.izq {
+    /* Establezco un margen a la izquierda para el elemento con la clase "izq" */
+    margin-left: 15px;
 }
 
 
