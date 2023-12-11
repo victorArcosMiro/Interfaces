@@ -1,0 +1,68 @@
+#cuadrado{
+    background: blue;
+    border-radius: 15px;
+    width: 20rem;
+    height: 20rem;
+    margin: auto;
+    border: 1px solid black;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 20%;
+}
+
+#verde{
+    position: relative;
+    width: 220px;
+    height: 220px;
+    margin: auto;
+    background: green;
+    border-radius: 50rem;
+    border: 1px solid black;
+    top: 16%;
+    text-align: center;
+}
+
+#amarillo{
+    width: 134px;
+    height: 134px;
+    margin: auto;
+    background: orange;
+    border: 1px solid black;
+    border-radius: 50rem;
+    position: relative;
+    top: 11%;
+    text-align: center;
+    
+}
+#rojo{
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    background: red;
+    border: 1px solid black;
+    border-radius: 50rem;
+    position: relative;
+    top: 10%;
+}
+
+#rojo p{
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    font-size: 19px;
+    
+    
+
+}
+.uno{
+
+    height:100%;
+    display: flex;
+    align-items: center;
+
+}
+.dos{
+
+    margin: auto;
+}

@@ -1,0 +1,20 @@
+
+.lista,.lista2,.lista3{
+    visibility: hidden;
+    display: none;
+}
+  
+#radio:checked ~ *.lista{
+    visibility: visible;
+    display: block;
+}
+
+#triangulo:checked ~ *.lista2{
+    visibility: visible;
+    display: block;
+}
+
+#cuadrado:checked ~ *.lista3{
+    visibility: visible;
+    display: block;
+}

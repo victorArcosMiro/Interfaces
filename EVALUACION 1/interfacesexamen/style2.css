@@ -1,0 +1,25 @@
+
+    #lista1:checked~table .listaRomanos,
+    #lista4:checked~table .square,
+    #lista2:checked~table .disc,
+    #lista3:checked~table .img-portfolio {
+      visibility: visible;
+    }   
+    .listaRomanos,
+    .disc,
+    .square,
+    .img-portfolio {
+      visibility: hidden;
+      position: absolute;
+    }
+
+    .listaRomanos{
+    list-style-type: lower-roman;
+    }
+   
+    .disc{
+      list-style-type: disc;
+    }
+    .square{
+      list-style-type: square;
+    }
