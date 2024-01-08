@@ -1,3 +1,11 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
 #cuadrado{
     background: blue;
     border-radius: 15px;
@@ -31,9 +39,9 @@
     border: 1px solid black;
     border-radius: 50rem;
     position: relative;
-    top: 11%;
+    top: 10%;
     text-align: center;
-    
+
 }
 #rojo{
     width: 60px;
@@ -48,18 +56,14 @@
 
 #rojo p{
     font-weight: bold;
-    text-align: center;
     color: white;
+    margin-top: 5px;
     font-size: 19px;
-    
-    
-
 }
 .uno{
 
-    height:100%;
-    display: flex;
-    align-items: center;
+    margin-bottom: 50%;
+
 
 }
 .dos{

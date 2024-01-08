@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Estilos para la div en general */
+    .content {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      background-color: lightgray;
+      border: 1px solid black;
+      height: 50px;
+    }
+    /*En cada uno de estos apartados he utilizado "@media" para delimitar las propiedades que se deben aplicar al ancho de cada pantalla, además he utilizado parrafo vacio en la estructura html para luego añadirle el contenido correspondiente dependiendo de en que rango de ancho de página se encuentre*/
+
+    /* Estilos específicos para pantallas con un ancho menor a 500px */
+    @media (max-width: 499px) {
+      .content {
+        background-color: orange; /*background color especifico para pantallas de menos de 500px*/
+      }
+
+      .content p {
+        font-size: 18px;
+        font-weight: bold;
+
+      }
+      .content p::after{
+        content: "Ancho < 500"; /*Contenido de la etiqueta <p> para pantallas de menos de 500px*/
+      }
+    }
+
+    /* Estilos específicos para pantallas con un ancho entre 500px y 699px */
+    @media (min-width: 500px) and (max-width: 699px) {
+      .content {
+        background-color: lightcoral;/*background color especifico para pantallas de entre 500px y 700px*/
+      }
+
+      .content p{
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .content p::after{
+        content: "700 > Ancho >= 700";/*Contenido de la etiqueta <p> para pantallas de menos de entre 500px y 700px*/
+      }
+    }
+
+    /* Estilos específicos para pantallas con un ancho igual o mayor a 700px */
+    @media (min-width: 700px) {
+      .content{
+        background-color: lightgreen;/*background color especifico para pantallas mayores o iguales a 700px*/
+      }
+
+      .content p {
+        font-size: 22px;
+        font-weight: bold;
+      }
+      .content p::after{
+        content: "Ancho >= 700"; /*Contenido de la etiqueta <p> para pantallas mayores o iguales a 700px*/
+
+      }
+    }
+
+  </style>
+</head>
+<body>
+<!--Div con clase "content" que solo contiene un elemento <p>-->
+<div class="content">
+  <p>
+  </p>
+</div>
+
+</body>
+</html>

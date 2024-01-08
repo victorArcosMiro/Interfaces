@@ -1,0 +1,72 @@
+*{
+    margin:0;
+    padding: 0;
+}
+/*Alto y ancho del body*/
+body{
+    height: 100%;
+    width: 100%;
+}
+/*Este es el marge que tiene por debajo el contenedor principal "content_div_1"*/
+.content_div_1{
+    margin-bottom: 50%;
+}
+/*Le aplicamos un margen automático al contenedor que esta dentro de "content_div_1", el ""content_div_2*/
+.content_div_2{
+    margin: auto;
+}
+/*Al div con identificador "content" le aplicamos un color de fondo azul, redondeamos los bordes con "border-radius" y le damos un alto y ancho con  medidas "em" para que tenga un diseño responsive, y un margin-top para situarlo correctamente*/
+#content{
+    background: blue;
+    border-radius: 15px;
+    width: 20rem;
+    height: 20rem;
+    margin: auto;
+    font-size: 18px;
+    margin-top: 20%;
+}
+/*A todos estos divs con estos identificadores le aplicamos un margen automatico y una posicion de tipo relativa a parte de con "border-radius" consegir que el div adquiera una forma circular*/
+#verde, #amarillo, #rojo{
+    margin: auto;
+    position: relative;
+    border-radius: 50rem;
+}
+/*Borde negro y de 1px para todos estos elementos*/
+#content, #verde, #amarillo, #rojo{
+    border: 1px solid black;
+}
+/*centramos el texto en estos elementos*/
+#verde, #amarillo{
+    text-align: center;
+}
+/*Un top para situarlo en la posicion correcta*/
+#amarillo, #rojo{
+    top: 10%;
+
+}
+/*El resto de codigo que queda es simplemente dando tamaños y colores de fondo a cada uno de los elementos resprectivamente*/
+#verde{
+    width: 220px;
+    height: 220px;
+    background: green;
+    top: 16%;
+}
+
+#amarillo{
+    width: 134px;
+    height: 134px;
+    background: orange;
+}
+#rojo{
+    width: 60px;
+    height: 60px;
+    background: red;
+}
+#content, p{
+    font-weight: bold;
+    color: white;
+    font-size: 19px;
+}
+#rojo p{
+    margin-top: 5px;
+}

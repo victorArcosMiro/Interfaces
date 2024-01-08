@@ -1,0 +1,31 @@
+/*Al contenedor con id "vocabulario" le damos un borde de 1px redondeado y de color negro, con unas mediadas en concreto, una disposicion "flex" para ordenar el contenido por filas y centramos el contenido verticalmente en el centro gracias a "align-items:center" */
+#vocabulario {
+    border: 1px solid;
+    border-color: black;
+    border-radius: 5px;
+    width: 400px;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/*Le damos un margen generico y uno en concreto a la izquierda*/
+#vocabulario ul, #vocabulario div{
+    margin: 5px;
+    margin-left: 5px;
+}
+/*En cada uno de los elementos(<li>), de la lista no ordenada, gracias a "hover" le añadimos una accion cuando se pase el cursor por encima de cada uno y luego gracias a "after" aparecera la palabra contenida en "content" respetando el margen declarado en "margin-left"*/
+#car:hover::after{
+    content: "Coche";
+    margin-left: 50px;
+
+}
+#window:hover::after{
+    content: "Ventana";
+    margin-left: 20px;
+}
+#door:hover::after{
+    content: "Puerta";
+    margin-left: 40px;
+}
