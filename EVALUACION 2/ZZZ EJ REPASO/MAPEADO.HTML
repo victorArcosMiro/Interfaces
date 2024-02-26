@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    ul li {
+      list-style: none;
+    }
+
+    div.imagen {
+      position: relative;
+      width: 450px;
+    }
+
+    li {
+      position: absolute;
+      border: solid 3px white;
+    }
+
+    /*Mostrar RECUADRO*/
+    ul.cuadro li {
+      display: none;
+    }
+
+    ul.cuadro li.pez-globo {
+      height: 70px;
+      width: 100px;
+      top: 190px;
+      left: 590px;
+    }
+/*ESTO HACE QUE EL RECUADRO SE MUESTRE DA IGUAL POR DONDE SE PASE EL CURSOR POR LA IMAGEN*/
+    img:hover+ul.cuadro li,
+    ul.cuadro li:hover {
+      display: block;
+    }
+
+    /*Mostrar TEXTO*/
+    ul.cuadro li.pez-globo p {
+      display: none;
+      top: 70px;
+      left: 5px;
+      background-color: antiquewhite;
+      padding: 10px;
+    }
+
+    ul.cuadro li.pez-globo:hover p {
+      display: block;
+    }
+
+
+    p {
+      position: absolute;
+      color: black;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="contenido">
+    <img src="../CSS Ejercicios 4.1 (solución) - MAPEADO ANIMALES MARINOS/Fondo marino.jpg" alt="">
+    <ul class="cuadro">
+      <li class="pez-globo">
+        <p>Cuidado que me inflo</p>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
