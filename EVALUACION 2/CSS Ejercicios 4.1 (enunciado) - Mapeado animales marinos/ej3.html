@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    /*En este ejercicio se trata de marcar el area del animal, a ese area ponerle una etiqueta <label>, la etiqueta <area> debe llevar la class="[nombre-animal]" y id="[nombre-animal]" y la etiqueta <label> debera llevar la class="[nombre-anima]-label" y for="[nombre-animal]"*/
+    label {
+      position: absolute;
+      display: none;
+      text-align: center;
+      font-size: large;
+      background-color: azure;
+      width: fit-content;
+      height: fit-content;
+      top: 0px;
+      left: 0px;
+    }
+
+    .pez-label, .medusa-label, .ballena-label {
+      position: absolute;
+      display: none;
+
+    }
+
+    .pez:hover+label {
+      display: inline-block;
+      top: 415px;
+      left: 69px;
+    }
+
+    .medusa:hover+label {
+      display: inline-block;
+      top: 300px;
+      left: 300px;
+    }
+
+    .ballena:hover+label {
+      display: inline-block;
+      top: 480px;
+      left: 250px;
+    }
+
+
+  </style>
+</head>
+
+<body>
+  <!-- Cooredenadas animales marinos -->
+
+  <img src="animales-marinos2.png" alt="img" usemap="#image-map">
+
+  <map name="image-map">
+    <area class="pez" target="" alt="pez" title="pez" href="" coords="37,304,24,328,11,357,23,376,41,393,57,403,82,407,101,404,116,396,126,385,115,373,124,373,123,344,107,347,119,329,107,314,92,303,74,295,54,298,45,300" shape="poly">
+    <label class="pez-label" for="pez">Pez</label>
+
+
+    <area class="medusa" id="medusa" target="" alt="medusa" title="medusa" href="" coords="294,164,273,188,267,214,274,239,271,252,282,260,293,262,279,272,272,283,273,293,282,301,288,307,292,314,305,321,323,323,348,322,365,320,382,313,389,304,397,291,400,282,388,267,398,258,404,252,407,235,402,193,382,162,349,151,316,153" shape="poly">
+    <label class="medusa-label" for="medusa">Medusa</label>
+
+    <area class="ballena" target="" alt="ballena" id="ballena" title="ballena" href="" coords="175,308,163,318,150,330,141,345,130,368,134,379,138,412,149,431,159,444,187,460,214,469,234,474,258,477,283,477,306,476,327,471,343,468,385,450,410,434,422,415,431,388,435,371,435,354,436,345,446,347,458,343,471,334,482,323,474,313,460,313,449,316,439,319,440,307,439,294,431,283,425,274,415,266,410,272,401,293,399,318,403,327,415,338,415,347,403,357,397,365,375,368,331,353,307,333,296,324,276,312,244,300,219,295,198,294" shape="poly">
+    <label class="ballena-label" for="ballena">Ballena</label>
+
+
+    <area target="" alt="tortuga" title="tortuga" href="" coords="268,61,267,33,258,18,242,9,219,7,198,12,181,24,178,42,177,56,184,67,191,78,201,87,210,93,217,103,228,112,233,123,243,131,250,138,247,149,245,161,255,167,263,166,274,160,284,151,298,149,313,149,327,148,341,146,356,146,367,143,377,144,391,152,408,154,413,144,407,133,411,122,406,108,400,88,394,72,385,60,371,48,350,41,335,39,298,44" shape="poly">
+
+
+    <area target="" alt="cangrejo" title="cangrejo" href="" coords="126,183,120,173,112,163,103,147,106,129,114,123,123,128,133,135,139,148,143,135,152,129,161,134,165,143,174,145,176,130,189,122,197,133,201,118,211,110,224,117,237,134,237,149,233,165,246,173,261,184,260,200,255,218,245,226,234,234,222,224,146,238,144,248,132,250,105,234,99,200" shape="poly">
+
+
+    <area target="" alt="caballito de mar" title="caballito de mar" href="" coords="39,50,76,36,105,38,109,58,119,83,122,92,134,98,130,113,116,115,107,125,98,131,109,165,106,182,95,203,86,207,98,225,92,243,73,253,47,255,24,235,18,209,25,185,6,160,12,141,15,114,32,115" shape="poly">
+  </map>
+</body>
+</html>
